@@ -1,0 +1,3 @@
+Team: Albert, Derek, Luis
+
+We made a regression model that predicts the home sale prices. We ranked the variables by their individual correlation with sale price and correlation times standard deviation then chose 10 features covering home size, lot size, age and quality. Specifically, the variables we used are GrLivArea, BsmtFinSF1, BsmtUnfSF, 1stFlrSF, 2ndFlrSF, GarageArea, YearBuilt, YearRemodAdd, OverallQual, and LogLotArea. Since LotArea was heavily skewed, we took the log of it to normalize it. We also encoded OverallQual as an ordinal. We tested 5 degrees and settled on degree 2 since it had the lowest RMSE on the test set. Our final train RMSE was about 28309 and our test RMSE was about 30746. Our Kaggle score was 110846.19737.
